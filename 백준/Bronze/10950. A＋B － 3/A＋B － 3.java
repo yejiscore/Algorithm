@@ -10,12 +10,15 @@ public class Main {
 
 		int t = Integer.parseInt(br.readLine());
     
-		for (int i=0; i<t; i++) {
-			StringTokenizer st = new StringTokenizer(br.readLine()," ");
-
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			System.out.println(a + b);
+		StringTokenizer st;
+		StringBuilder sb = new StringBuilder();
+ 
+		for (int i = 0; i < t; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()));
+			sb.append('\n');
 		}
+ 
+		System.out.println(sb);
 	}
 }
