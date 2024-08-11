@@ -1,13 +1,13 @@
-n, m = list(map(int, input().split()))
+n, m = map(int, input().split())
 
 basket = []
-for i in range(n):
-    basket.append(i+1)
+for i in range(1, n+1):
+  basket.append(i)
 
 for _ in range(m):
-    a, b = list(map(int, input().split()))
-    
-    for i in range((b-a+1)//2):
-        basket[a-1+i], basket[b-1-i] = basket[b-1-i], basket[a-1+i]
+  i, j = map(int, input().split())
+
+  for x in range((j-i+1)//2):
+        basket[i-1+x], basket[j-1-x] = basket[j-1-x], basket[i-1+x]
 
 print(*basket)
