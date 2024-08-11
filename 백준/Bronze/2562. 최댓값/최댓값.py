@@ -1,8 +1,5 @@
-nums = []
+nums = [int(input()) for _ in range(9)]
 
-for _ in range(9):
-  num = int(input())
-  nums.append(num)
-
-print(max(nums))
-print(nums.index(max(nums))+1)
+max_value = max(nums)
+print(max_value)
+print(nums.index(max_value)+1)
