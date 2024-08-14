@@ -1,19 +1,19 @@
-nums = [list(map(int, input().split())) for _ in range(3)]
-x = 0
-y = 0
+x1, y1 = map(int, input().split())
+x2, y2 = map(int, input().split())
+x3, y3 = map(int, input().split())
 
-if nums[0][0] == nums[1][0]:
-  x = nums[2][0]
-elif nums[1][0] == nums[2][0]:
-  x = nums[0][0]
+if x1 == x2:
+    x4 = x3
+elif x1 == x3:
+    x4 = x2
 else:
-  x = nums[1][0]
+    x4 = x1
 
-if nums[0][1] == nums[1][1]:
-  y = nums[2][1]
-elif nums[1][1] == nums[2][1]:
-  y = nums[0][1]
+if y1 == y2:
+    y4 = y3
+elif y1 == y3:
+    y4 = y2
 else:
-  y = nums[1][1]
+    y4 = y1
 
-print(x, y)
+print(x4, y4)
