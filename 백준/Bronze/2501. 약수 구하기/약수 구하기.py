@@ -7,6 +7,7 @@ for i in range(1, n+1):
     nums.append(i)
     if len(nums) == k:
       print(i)
+      break
 
-if len(nums) == 0 or len(nums) < k:
+else:
   print(0)
