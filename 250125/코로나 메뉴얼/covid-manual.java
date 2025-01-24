@@ -4,18 +4,27 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int countA = 0;
+        int cnt = 0;
         
-        for (int i = 0; i < 3; i++) {
-            String symptoms = sc.next();
-            int temperature = sc.nextInt();
-            
-            if (symptoms.equals("Y") && temperature >= 37) {
-                countA++;
-            }
+        String a1 = sc.next();
+        int aa1 = sc.nextInt();
+        if (a1.equals("Y") && aa1 >= 37) {
+            cnt++;
         }
         
-        if (countA >= 2) {
+        String b2 = sc.next();
+        int bb2 = sc.nextInt();
+        if (b2.equals("Y") && bb2 >= 37) {
+            cnt++;
+        }
+        
+        String c3 = sc.next();
+        int cc3 = sc.nextInt();
+        if (c3.equals("Y") && cc3 >= 37) {
+            cnt++;
+        }
+        
+        if (cnt >= 2) {
             System.out.println("E");
         } else {
             System.out.println("N");
