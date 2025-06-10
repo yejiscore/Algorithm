@@ -1,0 +1,12 @@
+class Solution {
+    public String solution(String cipher, int code) {
+        StringBuilder sb = new StringBuilder();
+        int n = cipher.length();
+        
+        for (int i = code-1; i < n; i+=code) {
+            sb.append(cipher.charAt(i));
+        }
+        
+        return sb.toString();
+    }
+}
